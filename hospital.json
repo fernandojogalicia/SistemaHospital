@@ -1,0 +1,36 @@
+[
+    {
+        "model": "hospital.paciente",
+        "pk": 1,
+        "fields": {
+            "nombre" : "Juanito",
+            "edad" : 25,
+            "telefono" : "12345678",
+            "direccion" : "4ta calle"
+        }
+    },
+    {
+        "model": "hospital.paciente",
+        "pk": 2,
+        "fields": {
+            "nombre" : "Pedrito",
+            "edad" : 30,
+            "telefono" : "876542",
+            "direccion" : "asd calle"
+        }
+    },
+    {
+        "model": "hospital.caso",
+        "pk": 1,
+        "fields": {
+            "enfermedad": "Apéndicitis",
+            "descripcion" : "Fue operado de emergencia por el apéndice",
+            "paciente": [
+                1
+            ],
+            "fecha_entrada": "2020-10-10",
+            "fecha_salida" : "2020-10-15",
+            "habitacion" : "A-1"
+        }
+    }
+]
