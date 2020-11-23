@@ -1,1 +1,15 @@
-<p>paciente works!</p>
+<table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
+    <tr>
+        <th class="mdl-data-table__cell--non-numeric">Nombre</th>
+        <th class="mdl-data-table__cell--non-numeric">Edad</th>
+        <th class="mdl-data-table__cell--non-numeric">telefono</th>
+        <th>Dirección</th>
+    </tr>
+    <tr *ngFor="let dato of pacientes">
+        <td class="mdl-data-table__cell--non-numeric">{{dato.nombre}}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{dato.edad}}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{dato.telefono}}</td>
+        <td>{{dato.direccion}}</td>
+    </tr>
+</table>
+
