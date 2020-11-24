@@ -25,7 +25,7 @@ SECRET_KEY = 'v&$xpwmj#nhapd0_w$rikfpyd5!9*^5d*g53boabg*1t6yblee'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
 
 # Application definition
@@ -33,14 +33,13 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'corsheaders',
     'graphene_django',
+    'django_hospital.hospital',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django_hospital.hospital',
-    
+    'django.contrib.staticfiles',    
 ]
 
 

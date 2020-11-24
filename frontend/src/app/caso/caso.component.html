@@ -1,8 +1,7 @@
 <h1>Casos de hospitalización</h1>
 
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" (click)="update()">
-    Agregar
-</button>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" routerLink="/form/caso"
+    (click)="update()"> Agregar </button>
 <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
     <tr>
         <th class="mdl-data-table__cell--non-numeric">Enfermedad</th>
@@ -16,7 +15,7 @@
     <tr *ngFor="let dato of casos">
         <td class="mdl-data-table__cell--non-numeric">{{dato.enfermedad}}</td>
         <td class="mdl-data-table__cell--non-numeric">{{dato.descripcion}}</td>
-        <td class="mdl-data-table__cell--non-numeric">{{dato.pacientes.nombre}}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{dato.pacientes}}</td>
         <td>{{dato.fechaEntrada}}</td>
         <td>{{dato.fechaSalida}}</td>
         <td>{{dato.habitacion}}</td>

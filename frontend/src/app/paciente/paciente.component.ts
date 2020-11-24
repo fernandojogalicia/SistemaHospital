@@ -39,7 +39,7 @@ export class PacienteComponent implements OnInit {
   }
 
   update() {
-    this.query.refetch({ offset: 100 * this.page });
+    this.query.refetch();
   }
 
   nextPage() {
@@ -50,6 +50,10 @@ export class PacienteComponent implements OnInit {
   prevPage() {
     if (this.page > 0) this.page--;
     this.update();
+  }
+
+  refresh() {
+    this.query.refetch();
   }
 
 }
