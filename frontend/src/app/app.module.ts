@@ -8,13 +8,17 @@ import { PacienteComponent } from './paciente/paciente.component';
 import { CasoComponent } from './caso/caso.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormCasoComponent } from './form-caso/form-caso.component';
+import { FormPacienteComponent } from './form-paciente/form-paciente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PacienteComponent,
-    CasoComponent
+    CasoComponent,
+    FormCasoComponent,
+    FormPacienteComponent
   ],
   imports: [
     BrowserModule,

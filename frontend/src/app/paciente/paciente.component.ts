@@ -20,7 +20,7 @@ query pacientes {
 })
 export class PacienteComponent implements OnInit {
 
-  page = 1;
+  page = 0;
   pacientes: any[] = [];
 
   private query: QueryRef<any>;
