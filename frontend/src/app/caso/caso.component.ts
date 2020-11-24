@@ -58,5 +58,7 @@ export class CasoComponent implements OnInit {
     if (this.page > 0) this.page--;
     this.update();
   }
-
+  refresh() {
+    this.query.refetch();
+  }
 }

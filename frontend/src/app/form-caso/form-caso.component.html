@@ -1,1 +1,18 @@
-<p>form-caso works!</p>
+<form #formularioCaso="ngForm" style="align-self: center;" (ngSubmit)="guardar()">
+    <h4>Ingreso de casos de hospitalización</h4>
+    <input type="text" name="enfermedad" placeholder="Especifique enfermedad" [(ngModel)]="caso.enfermedad">
+    <br><br>
+    <input type="text" name="descripcion" placeholder="Descripción" [(ngModel)]="caso.descripcion">
+    <br><br>
+    <select name="paciente" [(ngModel)]="caso.paciente" [ngModelOptions]="{standalone: true}" >
+        <option *ngFor="let dato of pacientes" value="{{dato.id}}">Nombre:{{dato.nombre}} Edad:{{dato.edad}}</option>
+    </select>
+    <br><br>
+    <input type="text" name="fechaEntrada" placeholder="Fecha de entrada al hospital" [(ngModel)]="caso.fechaEntrada">
+    <br><br>
+    <input type="text" name="fechaSalida" placeholder="Fecha de salida del hospital" [(ngModel)]="caso.fechaSalida">
+    <br><br>
+    <input type="text" name="habitacion" placeholder="Código de habitación" [(ngModel)]="caso.habitacion">
+    <br><br>
+    <button type="submit" style="color: blue;">Guardar</button>
+</form>
